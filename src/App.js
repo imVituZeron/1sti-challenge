@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import InputAdd from './components/HomePage/InputAdd';
+import Styled from 'styled-components';
+
+
+const Page = Styled.div`
+  width: 1350px;
+  height: 600px;
+  background: #f39c12;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Page className="Home">
+      <InputAdd />
+    </Page>
   );
 }
 
